@@ -1,2 +1,4 @@
 # Go-Study
-Study Go lang
+Learn Web programming in Go
+
+
