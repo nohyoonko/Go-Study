@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+</head>
+<body>
+    <div>
+        <h2 style="text-align: center;">QR 코드 생성</h2>
+    </div>
+    <div id="qrcode"></div>
+</body>
+<script type="text/javascript">
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "https://gw.hancom.com",
+        width: 128,
+        height: 128,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    $("#qrcode > img").css({"margin":"auto"});
+</script>
+</html>
